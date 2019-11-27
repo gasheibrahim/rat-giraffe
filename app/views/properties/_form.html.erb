@@ -1,0 +1,71 @@
+<%= form_for(property) do |f| %>
+  <% if property.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(property.errors.count, "error") %> prohibited this property from being saved:</h2>
+
+      <ul>
+      <% property.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :property %>
+    <%= f.text_field :property %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rent %>
+    <%= f.text_field :rent %>yen
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :building_age %>
+    <%= f.number_field :buildingAge %>year/years old
+  </div>
+  <div class="field">
+    <%= f.label :remarks %>
+    <%= f.text_area :remarks %>
+  </div>
+  <h4>Name of railway line1</h4>
+  <div class="field">
+    <%= f.label :Name_of_railway_line %>
+    <%= f.text_field :rail_line %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Station_name %>
+    <%= f.text_field :station_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :How_many_minutes_walk %>
+    <%= f.number_field :number_of_minutes %>min/mins
+  </div>
+  <h4>Name of railway line2</h4>
+  <div class="field">
+  <%= f.label :Name_of_railway_line %>
+    <%= f.text_field :rail_line1 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Station_name %>
+    <%= f.text_field :station_name1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :How_many_minutes_walk %>
+    <%= f.number_field :number_of_minutes1 %>min/mins
+  </div>
+
+  <div class="actions">
+    <%= f.submit value:'Register' %>
+  </div>
+<% end %>

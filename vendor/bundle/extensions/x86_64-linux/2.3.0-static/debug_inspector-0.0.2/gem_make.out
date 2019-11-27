@@ -1,0 +1,15 @@
+current directory: /home/prince/dev-exam-en/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+/home/prince/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20191124-19900-d0hyhw.rb extconf.rb
+creating Makefile
+
+current directory: /home/prince/dev-exam-en/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /home/prince/dev-exam-en/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.so
+
+current directory: /home/prince/dev-exam-en/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20191124-19900-lpgjvq
